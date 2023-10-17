@@ -10,15 +10,15 @@ Before you begin creating an application with this `devfile` code sample, it's h
   
 **Example**
 
-`oc new-build https://github.com/amazingkj/okd-spring-build-test.git`
+`oc new-build https://github.com/amazingkj/okd-hello.git`
 
 **Start a new build from the update-message branch**
 
-`oc new-build https://github.com/amazingkj/okd-spring-build-test.git#main`
+`oc new-build https://github.com/amazingkj/okd-hello.git#main`
 
 **Use --context-dir to build from a subdirectory**
 
-`oc new-build https://github.com/amazingkj/okd-spring-build-test.git --context-dir example`
+`oc new-build https://github.com/amazingkj/okd-hello.git --context-dir example`
 
 
 ### Use S2I in a build
@@ -35,4 +35,4 @@ The syntax is the same as normal Builds. OpenShift uses S2I when there is no Doc
 
 **Example**
 
-`oc new-app https://github.com/amazingkj/okd-spring-build-test.git#nodockerfile`
+`oc new-app https://github.com/amazingkj/okd-hello.git#nodockerfile`
