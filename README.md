@@ -19,6 +19,7 @@ Before you begin creating an application with this `devfile` code sample, it's h
 **Use --context-dir to build from a subdirectory**
 
 `oc new-build https://github.com/amazingkj/okd-hello.git --context-dir example`
+`oc new-app {namespace}/okd-hello \ --as-deployment-config`
 
 
 ### Use S2I in a build
