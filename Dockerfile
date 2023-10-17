@@ -7,7 +7,7 @@ ENV HOME /go
 
 RUN chgrp -R 0 /go && chmod -R g+rwX /go
 
-EXPOSE 8085
+EXPOSE 8086
 
 LABEL io.openshift.expose-services 8086/http
 
